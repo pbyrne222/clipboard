@@ -23,6 +23,12 @@
       </div>
       <div class="medium-6 large-2 columns">
         <%= f.submit "Submit", :class => 'button radius small expand success' %>
+        <div id="WaitDialog"   class="hidden" style="text-align: center">
+          <img  src="" />
+          <div style="margin-top: 10px; color: white">
+            <b>Please wait</b>
+          </div>
+        </div>
       </div>
     </div>
     <% end %>

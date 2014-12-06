@@ -34,8 +34,12 @@ $(document).ready(function() {
             $("#shift_index").html(html);
           }
         });
-        alert("An error has occurred with Salesforce");
+        alert("We were unable to sync all data with Salesforce at this time. Try reloading the page or contact TIYSeedlings@gmail.com");
       }
     });
   }
+});
+
+$("#form1").submit(function() {
+  $("#WaitDialog").modalDialog();
 });
