@@ -53,3 +53,7 @@ $(document).ajaxComplete(function() {
     }
   );
 });
+
+$('#new_volunteer').on('valid', function(){
+  $('input[type=submit]').attr('disabled', true);
+});
